@@ -4,11 +4,12 @@ class Owner
   attr_accessor :name, :pets
   
   @@all = []
-  @@pets = {:cats=>[], :dogs=>[], :fishes=>[]}
 
   def initialize(species)
     @species = species 
     @@all << self 
+    @pets = {:cats=>[], :dogs=>[], :fishes=>[]}
+
   end 
   
   def self.all 
@@ -31,28 +32,26 @@ class Owner
     @name 
   end 
   
-  def pets 
-    @@pets = {:cats=>[], :dogs=>[], :fishes=>[]}
-  end 
+ # def pets 
+  #  @pets = {:cats=>[], :dogs=>[], :fishes=>[]}
+  #end 
   
   def buy_fish(fish)
-     @@pets[:fishes] << Fish.new(fish)
+     @pets[:fishes] << Fish.new(fish)
   end 
   
   def buy_cat(cat)
-     @@pets[:cats] << Cat.new(cat)
+     @pets[:cats] << Cat.new(cat)
   end 
   
   def buy_dog(dog)
-     @@pets[:dogs] << Dog.new(dog)
+     @pets[:dogs] << Dog.new(dog)
   end 
   
   def walk_dogs
-    @@pets[:dogs].each do |dog|
-      dog.mood = happy"
+    @pets[:dogs].each do |dog|
+      dog.mood = 'happy'
     end 
-  end 
-        
   end 
   
 end
