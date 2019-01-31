@@ -67,6 +67,7 @@ class Owner
   end 
   
   def sell_pets
+    pets.each do |pet, num|
   end 
   
   def list_pets 
