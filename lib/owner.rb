@@ -68,7 +68,7 @@ class Owner
   
   def sell_pets
     pets.each do |pet, details|
-      
+      details.map
   end 
   
   def list_pets 
