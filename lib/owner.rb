@@ -48,7 +48,7 @@ class Owner
   end 
   
   def walk_dogs
-    @@pets[:dogs].each do |dogs,v|
+    @@pets[:dogs].each do |dog|
       if v == ":mood"
         
   end 
