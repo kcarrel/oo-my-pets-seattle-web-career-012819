@@ -32,9 +32,9 @@ class Owner
     @name 
   end 
   
-  def pets 
-    @pets = {:cats=>[], :dogs=>[], :fishes=>[]}
-  end 
+ # def pets 
+  #  @pets = {:cats=>[], :dogs=>[], :fishes=>[]}
+  #end 
   
   def buy_fish(fish)
      new_fish = Fish.new(fish)
